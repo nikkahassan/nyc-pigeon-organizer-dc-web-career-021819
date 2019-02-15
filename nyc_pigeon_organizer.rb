@@ -12,7 +12,7 @@ def nyc_pigeon_organizer(data)
         end
 
         if !new_hash[name][hash].include?(key)
-          new_hash[name][hash] << key.to_s
+          new_hash[name][hash].push(key.to_s)
         end
       end
     end
